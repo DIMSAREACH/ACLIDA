@@ -1,0 +1,193 @@
+/* Header Style */
+.container>header,
+.container>header>nav{
+    width: 100%;
+    height: 210px;
+    z-index: 100;
+}
+.container>header>nav{
+    position: fixed;
+    
+}
+/* -------------------Top nav-bar style-----------------*/
+.container>header>nav>.top-nav{
+    background-color: var(--nav-footer-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 180px;
+    position: relative;
+    box-shadow: 0 3px 5px black;
+    
+}
+.container>header>nav>.top-nav>.logo{
+    width: 250px;
+    padding-bottom: 5px;
+}
+.container>header>nav>.top-nav>.logo>img{
+    /* width: 100%; */
+    transition: 0.3s ease-in-out;
+    width: 250px;
+}
+.container>header>nav>.top-nav>.menu-top{
+    display: flex;
+    list-style: none;
+    color: white;
+    font-family: var(--font-montserrat);
+}
+.container>header>nav>.top-nav>.menu-top>li{
+    padding: 15px 8px 15px 10px;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    letter-spacing: 1px;
+    position: relative;
+}
+.container>header>nav>.top-nav>.menu-top>li>img{
+    border: 1px solid white;
+    border-radius: 2px;
+    padding: 1px;
+}
+.container>header>nav>.top-nav>.menu-top>li>span{
+    font-size: 16px;
+    vertical-align: middle;
+    
+}
+.container>header>nav>.menu>.menu-bot>li:nth-child(1){
+    padding-left: 0;
+}
+.container>header>nav>.top-nav>.menu-top>li:nth-child(4){
+   color: var(--hover-color);
+}
+.container>header>nav>.menu>.exchange{
+    height: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: var(--font-montserrat);
+    font-size: 15px;
+}
+.container>header>nav>.menu>.exchange>li{
+    padding: 28px 15px 20px 15px;
+}
+/* ---------------------------------------------------- */
+
+/* ------------------Dropdown-------------------------- */
+.container>header>nav>.top-nav>.menu-top>li>.dropdown{
+    position: absolute;
+    list-style: none;
+    top: 48px;
+    left: 0;
+    width: 295px;
+    height: 0;
+    overflow: hidden;
+    background-color: var(--menu-color);
+    text-align: end;
+    transition: 0.2s ease-in-out;
+    
+}
+.container>header>nav>.top-nav>.menu-top>li>.dropdown>li{
+    padding: 12px 10px;
+}
+.container>header>nav>.top-nav>.menu-top>li>.dropdown>li>a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+.container>header>nav>.top-nav>.menu-top>li>.dropdown>li:first-child{
+    border-top: 1px solid gray;
+    padding-top: 18px;
+}
+.container>header>nav>.menu>.menu-bot>li>.dropdown{
+    position: absolute;
+    list-style: none;
+    top: 67px;
+    left: 0;
+    width: 295px;
+    height: 0px;
+    overflow: hidden;
+    background-color: var(--menu-color);
+    text-align: end;
+    transition: 0.2s ease-in-out;
+    
+}
+.container>header>nav>.menu>.menu-bot>li>.dropdown>li{
+    padding: 12px 10px;
+    text-align: start;
+}
+.container>header>nav>.menu>.menu-bot>li>.dropdown>li>a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+.container>header>nav>.menu>.menu-bot>li>.dropdown>li:first-child{
+    border-top: 1px solid goldenrod;
+    padding-top: 18px;
+}
+
+
+/* ----------------------------------------------------- */
+
+/* ------------------Menu-nav style--------------------- */
+.container>header>nav>.menu{
+    width: 100%;
+    padding: var(--padd);
+    background-color: var(--menu-color);
+    display: flex;
+    justify-content: space-between;
+}
+.container>header>nav>.menu>.menu-bot{
+    display: flex;
+    list-style: none;
+    color: white;
+    font-family: var(--font-montserrat);
+}
+.container>header>nav>.menu>.menu-bot>li{
+    padding: 23px 15px 20px 15px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    transition: 0.4s ease-in-out;
+}
+.container>header>nav>.menu>.menu-bot>li:first-child{
+    padding-left: 0;
+}
+/* ---------------------------------------------------- */
+
+/* ------------------Hover effect---------------------- */
+
+.container>header>nav>.top-nav>.menu-top>li:hover>#down,
+.container>header>nav>.menu>.menu-bot>li:hover>#down{
+    transform: rotate(180deg) translateY(1px);
+}
+.container>header>nav>.top-nav>.menu-top>li:hover{
+    background-color: var(--menu-color);
+}
+.container>header>nav>.top-nav>.menu-top>li:hover>.dropdown{
+    height: 312px;
+    border-top: 1px solid gray;
+}
+.container>header>nav>.menu>.menu-bot>li:hover>.dropdown{
+    height: 375px;
+    border-top: 1px solid gray;
+}
+.container>header>nav>.top-nav>.menu-top>li:hover:nth-child(4)>.dropdown{
+    height: 100px;
+    border-top: 1px solid gray;
+}
+.container>header>nav>.menu>.menu-bot>li:hover{
+    color: var(--hover-color);   
+}
+.container>header>nav>.top-nav>.menu-top>li>.dropdown>li:hover>a,
+.container>header>nav>.menu>.menu-bot>li>.dropdown>li:hover>a{
+    text-decoration: underline;
+    color: var(--hover-color);
+}
+/* ---------------------------------------------------- */
